@@ -5,6 +5,9 @@ import {Inter} from "next/font/google";
 import {ThemeProvider} from "@/components/ThemeProvider"
 import NavBar from "@/components/Layout/navbar/NavBar";
 import {TableDemo} from "@/components/Table";
+import Providers from "@/provider/Providers";
+
+
 
 const inter = Inter({subsets: ['latin']})
 
@@ -23,6 +26,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
+        <Providers>
         <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
         <ThemeProvider
@@ -43,5 +47,6 @@ export default function RootLayout({
         </ThemeProvider>
         </body>
         </html>
+        </Providers>
     )
 }

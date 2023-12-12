@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {DarkModeToggle} from "@/components/DarModeToggle";
+import {DarkModeToggle} from "@/components/DarkModeToggle";
 import "../../../app/globals.css"
 import {SheetDemo} from "@/components/Sheet";
 
